@@ -1,13 +1,14 @@
 
 import './App.css'
-import { UserProfile } from './components/Profile/Profile.jsx'
-import { userData } from "../src/userData.json";
+import { Profile } from './components/Profile/Profile.jsx'
+import userData from '../src/userData.json';
 
 
 
-const App = () => {
+
+export default function App () {
   return (
-       <UserProfile
+       <Profile
         name={ userData.username}
         tag={ userData.tag}
         location={ userData.location}
@@ -17,4 +18,3 @@ const App = () => {
   );
 };
 
-export default App;

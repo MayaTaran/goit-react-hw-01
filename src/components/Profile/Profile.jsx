@@ -1,29 +1,30 @@
-    
-export const UserProfile = props => {
+import clsx from "clsx";
+import css from "./Profile.module.css";
+export const Profile = ({image, name, tag, location, stats}) => {
     return(
-<div>
-  <div>
-    <img
-      src={props.image}
+<div className={css.container}>
+  <div className={css.top}>
+                <img className={css.avatar}
+      src={image}
       alt="User avatar"
     />
-                <p>{props.name}</p>
-                <p>@{props.tag}</p>
-    <p>{props.location}</p>
+                <p className={css.name}>{name }</p>
+                <p className={css.text}>@{tag}</p>
+    <p className={css.text}>{location}</p>
   </div>
 
-  <ul>
-    <li>
+  <ul className={css.list}>
+    <li className={css.item}>
       <span>Followers</span>
-      <span>{props.stats}</span>
+      <span className={css.number}>{stats.followers}</span>
     </li>
-    <li>
+    <li className={css.item}>
       <span>Views</span>
-      <span>{props.stats}</span>
+      <span className={css.number}>{stats.views}</span>
     </li>
-    <li>
+    <li className={css.item}>
       <span>Likes</span>
-      <span>{props.stats}</span>
+      <span className={css.number}>{stats.likes}</span>
     </li>
   </ul>
         </div>)
