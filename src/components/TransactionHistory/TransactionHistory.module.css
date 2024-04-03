@@ -1,0 +1,25 @@
+.container {
+  margin-top: 24px;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+.table {
+  border-collapse: collapse;
+}
+.title {
+  background-color: #000;
+  color: #fff;
+  font-size: 24px;
+  width: 300px;
+  border: 2px solid #000;
+}
+.item {
+  border: 2px solid #000;
+  font-size: 20px;
+}
+.row {
+  background-color: lightgray;
+}
+.row:nth-child(even) {
+  background-color: gray; /* Колір фону для парних рядків */
+}

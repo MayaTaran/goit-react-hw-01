@@ -1,0 +1,22 @@
+.card {
+  width: 160px;
+  border: 2px solid #000;
+  border-radius: 16px;
+}
+.avatar {
+  margin-top: 16px;
+  width: 80px;
+}
+.name {
+  font-size: 36px;
+  font-weight: 700;
+  color: #000;
+}
+.online {
+  font-size: 24px;
+  color: green;
+}
+.offline {
+  font-size: 24px;
+  color: red;
+}
